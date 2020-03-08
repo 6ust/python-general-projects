@@ -1,0 +1,95 @@
+-----------------------------
+-- Instruções do Projeto
+-----------------------------
+
+Este projeto tem como objetivo organizar dados de um json em uma planilha Excel.
+
+Tecnologias e Linguagens Usadas:
+- Python
+- NodeJS
+- Excel - Pacote Office
+- Editor de Textos
+- Prompt de Comandos - CMD
+
+****************************************************** 
+** PARA EXECUTAR O PROJETO CERTIFIQUE-SE DE TER O   **
+** PYTHON, NODEJS, PACOTE OFFICE INSTALADOS         **
+** NA SUA MÁQUINA.                                  **
+****************************************************** 
+
+--------------
+-- ESTRUTURA
+--------------
+{
+  "people": [
+  		{
+  			"nome": "Augusto Silva",
+  			"idade": 32
+  		},
+  		{
+	  		"nome": "Jeniffer Amaral",
+  			"idade": 54
+  		}
+  ]
+}
+**************
+======================
+== PYTHON
+======================
+Bibliotecas Python:
+----------------------
+- pip install Workbook
+
+**********************
+
+
+======================
+== NODEJS - NPM
+======================
+
+PARA EXECUTAR A APLICAÇÃO INSTALE O NODEJS
+CONFIGURE E SALVE O ARQUIVO [] COM AS CONFIGURAÇÕES ABAIXO
+--------------
+C:\[path]\.npmrc
+--------------
+strict-ssl=false
+registry=http://registry.npmjs.org
+**************
+
+
+CERTIFIQUE-SE DE TER INSTALADO AS DEPENDENDIAS ABAIXO
+--------------
+Dependências
+--------------
+- npm install express
+- npm install body-parser
+- npm install fs
+**************
+
+=========================
+== EXECUÇÃO DO PROGRAMA
+=========================
+
+****************************************************
+** OBSERVAÇÃO                                     **
+**------------------------------------------------**
+** O PROJETO ESTÁ BASEADO NO JSON GERADO          **
+** PELO SITE:                                     **
+** https://www.4devs.com.br/gerador_de_pessoas    **
+****************************************************
+
+- Pelo CMD, vá até o local do projeto: [node-organizacao-de-json-em-txt/]
+
+- Coloque o JSON e dentro da pasta [/json]. OBS:  CERTIFIQUE-SE QUE A ESTRUTURA DO JSON É IGUAL A DO JSON DE EXEMPLO.
+
+- Execute o projeto com o comando [NPM START] no prompt de comando
+
+- Mova ou Copie o arquivo [organizacao-do-json.txt] para a pasta do [python-txt-para-planilha\txt-convert]
+
+- Pelo CMD, vá até o local do projeto:  [python-txt-para-planilha\]
+
+- Certifique-se de ter todas as [BIBLIOTECAS PYTHON] do projeto Instaladas na sua máquina.
+
+- Execute o projeto python com o comando -> py convert-txt-plan.py
+
+- Após a execução do projeto será gerado uma planilha [exemplo.xlsx], com os dados do txt organizados.
