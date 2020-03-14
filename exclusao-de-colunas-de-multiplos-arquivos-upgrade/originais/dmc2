@@ -1,0 +1,8 @@
+. Você passa um caminho (relativo ou absoluto) e ele te dá os nomes de todos os arquivos, pastas e links contidos no mesmo. Aí você pode filtrar por arquivo, se quiser (usando os.path.isfile), ou por outros critérios:
+
+import os
+
+caminhos = [os.path.join(pasta, nome) for nome in os.listdir(pasta)]
+arquivos = [arq for arq in caminhos if os.path.isfile(arq)]
+jpgs = [arq for arq in arquivos if arq.lower().endswith(".jpg")]
+Nota: se você estiver usando Python 2, e passar uma string comum (e não um unicode), os resultados virão como strings comuns, o que pode causar problemas caso haja arquivos com acentos no nome. Recomenda-se portanto usar Unicode em todas as operações, convertendo explicitamente para unicode caso tenha dúvida quanto ao tipo
