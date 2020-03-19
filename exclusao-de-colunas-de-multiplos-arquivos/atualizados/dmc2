@@ -1,11 +1,11 @@
-. Você passa u
+. Você passa um caminho (relativo ou absoluto) e ele te
 
 
 import os
 
 
 
-caminhos = [os
-arquivos = [ar
-jpgs = [arq fo
-Nota: se você 
+caminhos = [os.path.join(pasta, nome) for nome in os.li
+arquivos = [arq for arq in caminhos if os.path.isfile(a
+jpgs = [arq for arq in arquivos if arq.lower().endswith
+Nota: se você estiver usando Python 2, e passar uma str
